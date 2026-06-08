@@ -1,3 +1,4 @@
+
 public class Matrix {
     public static void main(String[] args) {
         for(int i=1; i<=3; i++)//rows:How many rows? - 3

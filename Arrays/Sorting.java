@@ -1,16 +1,29 @@
+import java.util.Scanner;
 public class Sorting {
     public static void main(String[] args) {
-        int arr[] = {23, 435, 656, 2, 5, 955};
+        Scanner sc = new Scanner(System.in);
+        int arr[] = new int[5];
         for(int i=0; i<arr.length; i++)
-            for(int j=i+1; j<arr.length; j++)
         {
-            if (arr[i] > arr[j])
+            System.out.println("Enter a element: ");
+            arr[i] = sc.nextInt();
+        }
+        for(int i=0; i<arr.length; i++)
+        {
+            for(int j=i+1; j<arr.length; j++)
             {
-                int
+                if(arr[i]>arr[j])
+                {
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+                }
             }
         }
-
-
+        for(int i=0; i<arr.length; i++)
+        {
+            System.out.println(arr[i] + " ");
+        }
+        }
     }
-    
-}
+

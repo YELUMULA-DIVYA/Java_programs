@@ -1,3 +1,4 @@
+package Patterns;
 public class Matrix10to1 {
     public static void main(String[] args) {
         int k=10;
